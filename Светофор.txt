@@ -1,0 +1,15 @@
+def entrance():
+    i = int(input())
+    if 1 <= i >= 100:
+        print("Число должно быть в пределах от 1 до 100 включительно")
+        entrance()
+    else:
+        calc(i)
+
+def calc(i):
+    if i == 1:
+        print(1,1)
+    else:
+        print(i,2*i-1)
+
+entrance()
