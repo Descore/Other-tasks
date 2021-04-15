@@ -1,0 +1,7 @@
+start = int(input())
+end = int(input())
+while start < end:
+ for i in range(10):
+    if 3 == str(start).count(str(i)):
+        print(start)
+ start += 1

@@ -1,0 +1,30 @@
+n=int(input())
+m=[]
+a=[]
+p=[]
+t=0
+res=0
+for i in range(n):
+ m.append(input())
+x=int(input())
+for i in range(x):
+ a.append(input())
+
+for j in range(x):
+ if t > 0:
+  p.append(t)
+  t=0
+ for k in range(n):
+  for l in range(len(a[j])):
+   for o in range(len(m[k])):
+    if m[k][o] == a[j][l]:
+     t = t + 1
+p.append(t)
+
+for v in range(x):
+ for g in range(x):
+  if p[v]>p[g]:
+   res = v
+
+print(a[res])
+
